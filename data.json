@@ -1,0 +1,117 @@
+{
+    "homeIcon": "assets/home.png",
+    "title": "Radiant Quest II",
+    "subtitle": "Project Documentation",
+    "links": [
+        { "text": "Concept", "url": "concept.html" },
+        
+        { "text": "Process", "url": "process.html" },
+        { "text": "Final Output", "url": "final.html" }
+    ],
+    "concept": {
+        "sections": [
+            {
+                "title": "Story",
+                "content": "            The Rift is named for its terrain, with a rapid river flowing through the immense canyon, it is undoubtedly a perilous place. Situated in a remote and cragged terrain, Located far from civilization, the Rift is rarely visited. In this secluded and challenging land, Ultras and a small population of humans coexist.\n\n            Ultras on Earth are a rare minority. Due to their extraordinary abilities and capability to control various elements, Ultras are always treated specially among ordinary people. They are loathed, discriminated against, and relegated to the fringes, excluded from residing within human civilization and society. As a result, most Ultras gather in the Rift away from civilization.\n\n            In the vast canyon, two distinct sects were active: the Dove and the Raven. The Dove, known for their reverence of the sun, embodied ideals of brightness and peace. Regarded as Seers by distant human civilizations, they held a long-standing reputation of goodwill. Many Ultras, once arriving at the canyon, converted to the Dove, further fostering respect and love from humans. For everyman, they can hardly associate the Seers with the Ultras they despise. This hidden truth is known only to the rulers: the esteemed Seers are, in fact, those very Ultras who have been shunned by human society. However, those who are bribed by Dove keep this secret from their own people. For millions of years, the Dove remained the sole and legitimate Sect in the Rift.\n\n            Contrastingly, the Raven, emerging in the last century, was rooted in darkness and rapidly grew in influence. This Raven originated from a group of Ultras who defied the Treaty of Peaceful Co-existence between Ultras and Humans. Many of these dissenters had faced injustices in their youth, fueling their resentment towards humanity. The Raven was thus founded on the principle of advocating for the destruction of human civilization, and its members were also known as Hexen by humans.\n\n            The Dove established MAGE, an academy specifically designed for ultras. MAGE offers Ultras a unique environment to master their powers. Those Ultras who are unable to master their abilities will riskily be consumed by themselves, devolving into a state where they resemble, but are not quite, human. Followers of the Raven are generally barred from MAGE if their true identities are known by the Dove. Therefore Hexen often appear intimidating; some exhibit bizarre physical transformations due to power infusion, developing animalistic features that make them neither fully human nor animal. Some bear scars and horrific wounds across their bodies. Some even die for their uncontrollable powers.\n\n            MAGE is founded to uncover and interpret “the Script”, discovered a millennium ago when the first Ultras ventured into the canyon. In an ancient, deserted altar within the Rift, they found the Script. This Script, with its ability to foresee the future, appeared to have been awaiting their arrival. The talented Ultras soon unraveled the mysteries of the Script which chronicles ancient miracles and foreshadows the future. Nevertheless, the vast power contained in the Script, intertwined with the turbulent energy fluctuation of the world over thousand years, eventually led to its fracture. The fragments of the script scattered all over the world. What the Dove have discovered was only a part of these fragments. The knowledge and energy contained in just a few shards of the script have already shocked them. Consequently, the Dove are fervently searching for the remaining shards, and so do the Raven.",
+                "link": { "text": "Glossary", "url": "glossary.html" }
+            },
+            {
+                "title": "Conflict",
+                "subsections": [
+                    {
+                        "subtitle": "Dove",
+                        "content": "Beliefs: Worship the sun as a symbol of life and clarity. They value peace, order, and the education of Ultras to prevent self-destruction.\nCustoms: Ritual sun dances at dawn, meditation to harness their elemental powers, and annual pilgrimages to the altar where the Script was first found."
+                    },
+                    {
+                        "subtitle": "Raven",
+                        "content": "Beliefs: Advocate for retribution against humanity, viewing themselves as warriors of vengeance. They embrace the chaotic aspects of their powers.\nCustoms: Dark initiation ceremonies, battles to prove loyalty, and the crafting of talismans from Script shards to enhance their abilities."
+                    },
+                    {
+                        "subtitle": "Central Conflict",
+                        "content": "The struggle between the Dove and the Raven for control over the Script fragments mirrors the broader tension between Ultras and humans. The Raven seeks to wield the Script’s power for destruction, while the Dove strives to preserve peace. Humans remain blind to the virtues of Ultras, view them only as threats. Driven by fear, they seek to eliminate Ultras to protect themselves."
+                    }
+                ]
+            },
+            {
+                "title": "Character",
+                "subsections": [
+                    {
+                        "subtitle": "Protagonist",
+                        "content": "As a follower of the Dove, the protagonist is a skilled swordfighter who can channel her energy into her sword to deliver powerful attacks. She has uncovered clues about the possible location of ‘Script’ fragments, which lies within the territory of the Raven. Determined, she embarks on an adventure to retrieve the fragment. Meanwhile, Raven followers are also searching for the fragment within their domain, setting up traps for intruders. Along the way, the protagonist may encounter these Raven followers and their traps. On her journey, she discovers talismans made from 'Script' fragments, left behind by Raven members. These talismans, which look like gemstones, are highly sought after by the Dove for research and to uncover the secret of Raven transforms the ‘Script’ fragments into these talismans."
+                    }
+                ]
+            }
+        ]
+    },
+    "process": {
+        "title": "Process",
+        "sections": [
+            {
+                "subtitle": "Building Tilemap",
+                "content": "To build the map, I used individual pixel blocks to build the layout I designed for this level. Once the map was completed, I added Collider 2D and Rigidbody 2D components to the tilemap grid. This gave the map physical properties, allowing the main character to stand on it and interact with it during movement.",
+                "image": "assets/Process/tilemap.jpg",
+                "video": "assets/Process/map.mov"
+                
+            },
+            {
+                "subtitle": "Platforms",
+                "content": "To build the platform, I first created an empty 2D square and then imported the platform assets into it. Next, I created an animation for the platform, allowing it to play automatically when the game starts. To make the platform move up and down, I wrote a script and set up two points. Working together with the script, these points allow the platform to move smoothly between them. To ensure the character stays on the platform without falling when it moves, I added another script. This script allows the character to remain stable on the platform and move along with it seamlessly.",
+                "image": "assets/script/platform.JPG",
+                "video": "assets/Process/platforms.MOV",
+                "icon": "assets/Icon/platform.png"
+            },
+            {
+                "subtitle": "Spikes",
+                "content": "To set up the spikes, I followed a similar process by first adding an empty 2D square and importing the spike assets. Then, I wrote a script that reduces the character's health whenever they come into contact with the spikes. To detect contact between the spikes and the player, I added a Collider 2D and a Rigidbody to the spikes. In the script, I set up a condition that reduces the player's health upon collision with the spikes.",
+                "image": "assets/script/spike.jpg",
+                "video": "assets/Process/spikes.MOV",
+                "icon": "assets/Icon/spike.png"
+            },
+            {
+                "subtitle": "Saws",
+                "content": "The process and mechanics for creating the saw are very similar to those for the spikes, but the saw requires an additional script to control its rotation. In the rotation script, I used the formula 360 * speed * Time.deltaTime to make the saw spin smoothly and continuously.",
+                "image": "assets/script/saw.jpg",
+                "video": "assets/Process/saws.MOV",
+                "icon": "assets/Icon/saw.png"
+            },
+            {
+                "subtitle": "Collection Mechanism",
+                "content": "To create the collection mechanism of the game, I wrote a script to handle the interactions. When the character touches a talisman, the talisman disappears, and a counter updates to display the collected amount. To enable the interaction, I added a Collider 2D to the talismans. Upon collide with the character, the talisman is destroyed, making it disappear from the screen.",
+                "image": "assets/script/collection.jpg",
+                "video": "assets/Process/collection.mov",
+                "icon": "assets/Icon/collection.png"
+            },
+            {
+                "subtitle": "Player",
+                "content": "To achieve the character's movement, and animation transitions, I used the Animator in Unity and created a supporting script. In the Animator, I linked various actions and defined conditions in the script to switch animations, such as idle, running, jumping, falling, and attacking, based on user input or detected conditions. By detected conditions, the script checks if ‘dirX > 0’ or  ‘dirX< 0’ to determine the player's input for left or right movement. Similarly, changes in the player's Y-axis position, such as an increase or decrease, trigger the jump or fall animations.\nAdditionally, I implemented a health system with a dynamic UI health bar that updates based on the character's current HP. When the character takes damage or interacts with traps, the health bar decreases accordingly. If the HP reaches zero, a death animation plays, and the character respawns at the starting point.",
+                "image": "assets/script/player.JPG",
+                "video": "assets/Process/movement.mov",
+                "icon": "assets/Icon/main.png"
+            },
+            {
+                "subtitle": "Enemy Interaction",
+                "content": "To create the self-chasing enemy, I used a similar approach to the main character by first linking behaviors in the Animator and then creating a supporting script. Unlike the player-controlled character, the enemy operates autonomously. Using 'detectionDistance' in the script, the enemy can detect the player's proximity and if the player is close enough, the enemy stops patrolling and starts chasing. If the enemy gets close enough to the player, it triggers an attack animation. When the enemy takes damage from the protagonist and its health reaches zero, a death animation is triggered, and the enemy disappears after a short delay.",
+                "image": "assets/script/enemy.jpg",
+                "video": "assets/Process/enemy.mov",
+                "icon": "assets/Icon/enemy.png"
+            }
+        ]
+    },
+    "final": {
+        "title": "Final Output",
+        "videos": [
+            {
+                "title": "Quest I",
+                "description": "This is the first level of the game, including collectibles and simple traps.",
+                "url": "assets/level1.mov",
+                "link": "https://youtu.be/Thl_RajvPDA"
+            },
+            {
+                "title": "Quest II",
+                "description": "This is the second level of the game, introducing more traps and the appearance of enemies.",
+                "url": "assets/level2.mov",
+                "link": "https://youtu.be/Q9ELasMx7Ms"
+            }
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+body {
+    font-family: "Jersey 20", serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-top: 13%;
+}
+
+h1 {
+    font-size: 50px;
+    
+}
+
+h2 {
+    font-size: 25px;
+    color: #333;
+    
+}
+
+.links-placeholder {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links-placeholder a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    padding: 3px;
+}
+
+.links-placeholder a:hover {
+    background-color: #555;
+}

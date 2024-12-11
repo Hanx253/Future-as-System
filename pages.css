@@ -1,0 +1,116 @@
+body {
+    font-family: "Jersey 20", serif;
+    background-color: #f4f4f4;
+    margin-top: 12%;
+    margin-bottom: 7%;
+}
+
+.container {
+    max-width: 55vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 35px;
+    border-bottom: 2px solid black;
+    margin-top: 55px;
+}
+
+.content-placeholder h2 {
+    margin: 0;
+    margin-top: 30px;
+}
+
+.content-placeholder p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+
+}
+
+.section-icon {
+    margin-top: 20px;
+    width: 100px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 35px;
+    color: #333;
+    white-space: pre-wrap;
+}
+
+.icon {
+    position: absolute;
+    top: 55px;
+    margin: auto;
+}
+
+.icon img {
+    width: 60px;
+    transition: transform 0.2s;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+.section-image {
+    display: block;
+    max-width: 100%;
+    max-height: 450px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 12px;
+
+}
+
+.final-video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.section-video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.content-placeholder a {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    padding: 3px;
+}
+
+.content-placeholder a:hover {
+    background-color: #555;
+}

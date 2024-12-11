@@ -1,0 +1,66 @@
+body {
+    font-family: "Jersey 20", serif;
+    background-color: #f4f4f4;
+    margin-top: 12%;
+    margin-bottom: 7%;
+}
+
+.container {
+    max-width: 55vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 35px;
+    border-bottom: 2px solid black;
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333;
+    white-space: pre-wrap;
+}
+
+.icon {
+    position: absolute;
+    top: 55px;
+    margin: auto;
+}
+
+.icon img {
+    width: 60px;
+    transition: transform 0.2s;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+.vocabulary-card {
+    max-width: 500px;
+    margin: auto;
+    padding: 5px 40px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.definition-section {
+    text-align: left;
+}
+
+.definition-section span {
+    font-size: 20px;
+}
+
+.word-selector {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
